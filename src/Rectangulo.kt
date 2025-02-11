@@ -1,6 +1,6 @@
 package src
 
-class Rectangulo(color: Color = Color.Fucsia, val altura: Double, val ancho: Double): Figura(color) {
+class Rectangulo(color: Color = Color.Fucsia, private val altura: Double, private val ancho: Double): Figura(color) {
 
     override fun area(): Double {
         return ancho * altura

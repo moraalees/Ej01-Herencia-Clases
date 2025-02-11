@@ -1,6 +1,6 @@
 package src
 
-class Triangulo(color: Color = Color.Fucsia, val base: Double, val altura: Double): Figura(color) {
+class Triangulo(color: Color = Color.Fucsia, private val base: Double, private val altura: Double): Figura(color) {
 
     override fun area(): Double {
         return (base * altura) / 2

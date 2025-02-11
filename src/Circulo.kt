@@ -1,6 +1,6 @@
 package src
 
-class Circulo(color: Color = Color.Fucsia, val radio: Double): Figura(color) {
+class Circulo(color: Color = Color.Fucsia, private val radio: Double): Figura(color) {
 
     override fun area(): Double {
         return Math.PI * radio * radio
