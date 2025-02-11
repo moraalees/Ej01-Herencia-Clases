@@ -1,6 +1,6 @@
 package src
 
-class Circulo(color: String, val radio: Double): Figura(color) {
+class Circulo(color: Color = Color.FUCSIA, val radio: Double): Figura(color) {
 
     override fun area(): Double {
         return Math.PI * radio * radio
@@ -10,4 +10,7 @@ class Circulo(color: String, val radio: Double): Figura(color) {
         return 2 * Math.PI * radio
     }
 
+    override fun toString(): String {
+        return "Circulo de color $color. Radio = $radio cms."
+    }
 }

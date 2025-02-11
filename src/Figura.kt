@@ -1,7 +1,11 @@
 package src
 
-abstract class Figura(val color: String) {
+abstract class Figura(val color: Color) {
     abstract fun area(): Double
 
     abstract fun perimetro(): Double
+
+    override fun toString(): String {
+        return "Figura de color $color"
+    }
 }

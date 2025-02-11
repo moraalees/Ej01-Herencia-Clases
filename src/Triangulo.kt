@@ -1,6 +1,6 @@
 package src
 
-class Triangulo(color: String, val base: Double, val altura: Double): Figura(color) {
+class Triangulo(color: Color = Color.FUCSIA, val base: Double, val altura: Double): Figura(color) {
 
     override fun area(): Double {
         return (base * altura) / 2
@@ -10,4 +10,7 @@ class Triangulo(color: String, val base: Double, val altura: Double): Figura(col
         return base * 3
     }
 
+    override fun toString(): String {
+        return "Triángulo de color $color. Base = $base cms. / Altura = $altura cms."
+    }
 }
