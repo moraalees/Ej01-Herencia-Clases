@@ -1,13 +1,13 @@
 package src
 
 enum class Color {
-    AZUL,
-    BLANCO,
-    ROJO,
-    FUCSIA,
-    GRANATE,
-    AMARILLO,
-    DORADO;
+    Azul,
+    Blanco,
+    Rojo,
+    Fucsia,
+    Granate,
+    Amarillo,
+    Dorado;
 
     companion object{
         fun generarColorAleatorio(): Color{

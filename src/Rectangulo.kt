@@ -1,6 +1,6 @@
 package src
 
-class Rectangulo(color: Color = Color.FUCSIA, val altura: Double, val ancho: Double): Figura(color) {
+class Rectangulo(color: Color = Color.Fucsia, val altura: Double, val ancho: Double): Figura(color) {
 
     override fun area(): Double {
         return ancho * altura
@@ -11,6 +11,6 @@ class Rectangulo(color: Color = Color.FUCSIA, val altura: Double, val ancho: Dou
     }
 
     override fun toString(): String {
-        return "Rectángulo de color $color. Altura = $altura cms. / Anchura = $ancho cms."
+        return "Rectángulo de color $color. Altura = $altura cms. / Anchura = $ancho cms. Su área es de ${area()} cms3 y su perímetro de ${perimetro()} cms2."
     }
 }
